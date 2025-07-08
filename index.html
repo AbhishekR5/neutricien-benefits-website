@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neutricien Benefits - Your Path to Wellness</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm fixed w-full z-10 py-4 px-6 md:px-12">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800 flex items-center">
+        <svg class="w-8 h-8 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M9 2a1 1 0 00-1 1v1.586l-.293-.293a1 1 0 00-1.414 1.414L7.586 7H4a1 1 0 000 2h3.586l-.293.293a1 1 0 001.414 1.414L9 10.414V12a1 1 0 002 0v-1.586l.293.293a1 1 0 001.414-1.414L12.414 9H16a1 1 0 000-2h-3.586l.293-.293a1 1 0 00-1.414-1.414L11 3.586V2a1 1 0 00-1-1z" clip-rule="evenodd" />
+        </svg>
+        Neutricien<span class="text-green-500">Benefits</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#about" class="hover:text-green-600">About Us</a>
+        <a href="#services" class="hover:text-green-600">Services</a>
+        <a href="#testimonials" class="hover:text-green-600">Testimonials</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden px-4 py-2 bg-white border-t border-gray-200">
+      <a href="#home" class="block py-1">Home</a>
+      <a href="#about" class="block py-1">About Us</a>
+      <a href="#services" class="block py-1">Services</a>
+      <a href="#testimonials" class="block py-1">Testimonials</a>
+      <a href="#contact" class="block py-1">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="mt-20">
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20 min-h-screen flex items-center">
+      <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-white">
+            Unlock Your <span class="text-yellow-200">Optimal Health</span> with Neutricien Benefits
+          </h1>
+          <p class="text-lg text-white mb-6">
+            Personalized nutrition plans and expert guidance to help you achieve your wellness goals.
+          </p>
+          <a href="#services" class="btn-primary text-white py-3 px-6 rounded-full inline-block">
+            Explore Our Services
+          </a>
+        </div>
+        <div class="md:w-1/2">
+          <img src="images/hero-image.jpg" alt="Healthy Lifestyle" class="rounded-xl shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img src="images/mission-image.png" alt="Our Mission" class="rounded-xl shadow-md">
+        </div>
+        <div class="md:w-1/2 text-gray-700 text-lg leading-relaxed">
+          <p class="mb-4">At Neutricien Benefits, we believe optimal health is within reach. Our certified nutritionists provide evidence-based guidance for your health goals.</p>
+          <p class="mb-4">From weight management to holistic wellness, our programs are tailored to your lifestyle and preferences.</p>
+          <p>We empower you with sustainable habits and ongoing support for long-term health transformation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+            <h3 class="text-2xl font-semibold mb-2 text-center text-green-600">Nutrition Plans</h3>
+            <p class="text-center text-gray-600">Personalized meal plans tailored to your goals and lifestyle.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+            <h3 class="text-2xl font-semibold mb-2 text-center text-green-600">Weight Management</h3>
+            <p class="text-center text-gray-600">Sustainable strategies for weight loss or gain.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+            <h3 class="text-2xl font-semibold mb-2 text-center text-green-600">Condition-based Counseling</h3>
+            <p class="text-center text-gray-600">Expert advice for diabetes, heart conditions, and more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-white">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-4xl font-bold text-center mb-12">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+            <p class="italic text-gray-700 mb-4">"I feel healthier and more energized thanks to Neutricien Benefits!"</p>
+            <div class="flex items-center">
+              <img src="images/client-avatar.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4" />
+              <div>
+                <p class="font-semibold">Jane Doe</p>
+                <p class="text-sm text-gray-500">Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 md:px-12 max-w-3xl bg-white p-8 rounded-xl shadow-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+        <form>
+          <div class="mb-4">
+            <label class="block mb-1 text-gray-700">Name</label>
+            <input type="text" class="w-full border px-4 py-2 rounded-md" required />
+          </div>
+          <div class="mb-4">
+            <label class="block mb-1 text-gray-700">Email</label>
+            <input type="email" class="w-full border px-4 py-2 rounded-md" required />
+          </div>
+          <div class="mb-4">
+            <label class="block mb-1 text-gray-700">Message</label>
+            <textarea class="w-full border px-4 py-2 rounded-md" rows="4" required></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn-primary px-6 py-2 text-white rounded-full">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Neutricien Benefits. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

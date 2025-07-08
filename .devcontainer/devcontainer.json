@@ -1,0 +1,21 @@
+{
+  "name": "Neutricien Benefits Website",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [5500],
+  "postCreateCommand": "npm install -g http-server",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "portsAttributes": {
+    "5500": {
+      "label": "Web Preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "runArgs": ["--init"],
+  "postStartCommand": "http-server -p 5500"
+}
